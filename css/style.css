@@ -1,0 +1,64 @@
+body {
+    background-color: #1b2e42;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+    padding: 50px 0;
+}
+
+#tabs-column {
+    background-color: #ffffff;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+}
+
+#tabs-column .nav-link {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#tabs-column .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#sectionContent .content-slider {
+    background-color: #2ca3d9;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+#image-column img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    #tabs-column {
+        background-color: transparent;
+        border: none;
+    }
+
+    #tabs-column .nav-link {
+        font-size: 16px;
+    }
+
+    #image-column {
+        display: none;
+    }
+
+    .content-slider {
+        background-image: url('../images/mobile-background.jpg'); /* Change the background for mobile */
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+  
+}
